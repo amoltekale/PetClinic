@@ -2,7 +2,7 @@ FROM java:8-jre
 
 ENV CATALINA_HOME /usr/local/tomcat
 ENV PATH $CATALINA_HOME/bin:$PATH
-
+USER amoltekale
 RUN mkdir -p "$CATALINA_HOME" \
     && apt-get update
 
